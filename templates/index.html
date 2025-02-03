@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh's | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Add this right after the body tag, before any other content -->
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Add these elements right after the body tag -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Santhosh<span>'s Portfolio</span></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Vutla Santhosh Kumar</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Computer Science Student passionate about creating innovative solutions.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/santhosh.vutla" style="--i:7;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/santhosh_vutla" style="--i:8;"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/santhosh_vutla" style="--i:9;"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/santhosh-kumar-vutla" style="--i:10;"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="{{ url_for('static', filename='img/123.jpg') }}" 
+                     alt="Professional Profile" 
+                     width="250" 
+                     height="300">
+            </div>
+            <div class="about-text">
+                <h3>I am Santhosh Kumar </h3>
+                <p>I am a dedicated developer with a solid background in web development and programming. I strive to build innovative solutions that deliver seamless user experiences and address real-world challenges.</p>
+                <div class="cv-buttons">
+                    <a href="{{ url_for('static', filename='img/Resume.pdf') }}" class="btn" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="{{ url_for('static', filename='img/Resume.pdf') }}" class="btn" target="_blank">
+                        <i class="fas fa-eye"></i> View CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <div class="education-container">
+            <div class="education-box">
+                <div class="education-content" style="--i:1;">
+                    <div class="content">
+                        <div class="year">
+                            <i class="fas fa-calendar"></i> 2022 - 2025
+                        </div>
+                        <h3>BSc in Data Science</h3>
+                        <p>K B N College , Vijayawada</p>
+                        <p class="grade"><i class="fas fa-star"></i> Percentage: 75%</p>
+                    </div>
+                </div>
+
+                <div class="education-content" style="--i:2;">
+                    <div class="content">
+                        <div class="year">
+                            <i class="fas fa-calendar"></i> 2020 - 2022
+                        </div>
+                        <h3>Intermediate  Bi.P.C</h3>
+                        <p>Deeksha Junior College , Kanchikacherla</p>
+                        <p class="grade"><i class="fas fa-star"></i> Percentage: 83.3%</p>
+                    </div>
+                </div>
+
+                <div class="education-content" style="--i:3;">
+                    <div class="content">
+                        <div class="year">
+                            <i class="fas fa-calendar"></i> 2019 - 2020
+                        </div>
+                        <h3>SSC</h3>
+                        <p>Z P High School , Jayanthi</p>
+                        <p class="grade"><i class="fas fa-star"></i> Marks: 536/600</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                <h3>SQL</h3>
+            </div>
+            <div class="skill-box">
+                <img src="{{ url_for('static', filename='img/Tableau-1.png') }}" alt="Tableau">
+                <h3>Tableau</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-box" style="--i:1;">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='img/stocks.png') }}" alt="Portfolio Project">
+                </div>
+                <div class="project-content">
+                    <h3>AI Stock Slave</h3>
+                    <p>A chatbot based on Python's Rasa framework that provides real-time stock market information and price updates through API integration.</p>
+                    
+                    <a href="https://azma152.github.io/project_front" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-box" style="--i:2;">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='img/car.png') }}" alt="Weather App">
+                </div>
+                <div class="project-content">
+                    <h3>Luxury Car Garage</h3>
+                    <p>An exclusive car showroom website showcasing high-end vehicles with detailed specifications, pricing, and virtual tour features for luxury car enthusiasts..</p>
+                    
+                    <a href="https://azma152.github.io/task1/" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-box" style="--i:3;">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='img/job.png') }}" alt="Student Management System">
+                </div>
+                <div class="project-content">
+                    <h3>Job Application Portal</h3>
+                    <p>A comprehensive job application platform where users can submit applications, upload resumes, and track their application status with a user-friendly interface.</p>
+                   
+                    <a href="https://azma152.github.io/task2/" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-box" style="--i:4;">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='img/calc1.avif') }}" alt="Student Management System">
+                </div>
+                <div class="project-content">
+                    <h3>Digital Calculator</h3>
+                    <p>A feature-rich calculator application supporting complex mathematical operations, memory functions, and scientific calculations with a modern interface.</p>
+                   
+                    <a href="https://azma152.github.io/task3/" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-box" style="--i:5;">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='img/movie.png') }}" alt="Student Management System">
+                </div>
+                <div class="project-content">
+                    <h3>MovieMate -Ticket Booking</h3>
+                    <p>An interactive movie ticket booking platform with seat selection, show timing management, and secure payment integration for a seamless booking experience.</p>
+                   
+                    <a href="https://azma152.github.io/task4/" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-box" style="--i:6;">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='img/dailymart.png') }}" alt="Student Management System">
+                </div>
+                <div class="project-content">
+                    <h3>Daily Mart</h3>
+                    <p>A modern grocery e-commerce platform featuring product categories, shopping cart functionality, and real-time inventory management for daily essentials.</p>
+                   
+                    <a href="https://azma152.github.io/task5/" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-box" style="--i:1;">
+                    <i class="fas fa-envelope"></i>
+                    <p>vutlasanthosh9@gmail.com</p>
+                    <a href="mailto:vutlasanthosh9@gmail.com" class="contact-link mini">
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="info-box" style="--i:2;">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>+91 8309225974</p>
+                    <a href="https://wa.me/918309225974" class="contact-link mini">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 by Santhosh Kumar | All Rights Reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://wa.me/918309225974" class="footer-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:vutlasanthosh9@gmail.com" class="footer-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.facebook.com/santhosh.vutla" class="footer-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/santhosh-kumar-vutla" class="footer-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/santhosh_vutla" class="footer-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/santhosh_vutla" class="footer-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
